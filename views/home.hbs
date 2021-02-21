@@ -1,0 +1,10 @@
+<h1>My form</h1>
+<form action="/send" method="post" id='i-recaptcha'>
+    <input type="text" name="name" id="name" placeholder="nombre">
+    <br>
+    <input type="email" name="email" id="email" placeholder="correo">
+    <br>
+    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="comentario"></textarea>
+    <br>
+    <button type="submit" class="g-recaptcha" data-sitekey={{GOOGLE_RECAPTCHA_SITE_KEY}} data-callback="onSubmit">Send</button>
+</form>
